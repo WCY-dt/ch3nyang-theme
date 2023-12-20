@@ -1,9 +1,9 @@
 // 预先定义一些颜色
-$color-words-and-lines-light: black;
+$color-words-and-lines-light: rgb(50, 50, 50);
 $color-background-light: white;
 $color-block-light: rgba(0, 0, 0, 0.02);
 
-$color-words-and-lines-dark: white;
+$color-words-and-lines-dark: rgb(200, 200, 200);
 $color-background-dark: black;
 $color-block-dark: rgba(255, 255, 255, 0.1);
 
@@ -24,6 +24,19 @@ body[color_theme="dark"] {
     .post-list-item a,
     .post_content a {
         @include dark-appearance;
+    }
+
+    .page-content .nav a:hover,
+    .more:hover,
+    .page-content footer a:hover,
+    .post_content a:hover {
+        color: $color-background-dark;
+        background-color: $color-words-and-lines-dark;
+    }
+
+    // FIXME: 无法覆盖 .post-list-item:hover .title 的样式
+    .post-list-item:hover {
+        background-color: $color-block-dark;
     }
 
     .page-content>header,
@@ -73,6 +86,13 @@ body {
 button {
     color:$color-words-and-lines-light;
     background-color: $color-background-light;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .material-symbols-outlined {
@@ -169,10 +189,14 @@ button {
         grid-row: 1;
 
         a {
-            padding-left: 20px;
+            margin-left: 20px;
 
             text-decoration: underline;
             color: $color-words-and-lines-light;
+        }
+        a:hover {
+            color: $color-background-light;
+            background-color: $color-words-and-lines-light;
         }
     }
     .theme {
@@ -271,10 +295,17 @@ button {
         }
     }
 }
+.post-list-item:hover {
+    background-color: $color-block-light;
+}
 
 .more {
     text-decoration: underline;
     color: $color-words-and-lines-light;
+}
+.more:hover {
+    color: $color-background-light;
+    background-color: $color-words-and-lines-light;
 }
 
 // 设置 footer
@@ -286,6 +317,10 @@ button {
     a {
         text-decoration: underline;
         color: $color-words-and-lines-light;
+    }
+    a:hover {
+        color: $color-background-light;
+        background-color: $color-words-and-lines-light;
     }
 }
 
@@ -328,6 +363,10 @@ button {
         text-decoration: underline;
         color: $color-words-and-lines-light;
     }
+    a:hover {
+        color: $color-background-light;
+        background-color: $color-words-and-lines-light;
+    }
 
     p:has(img) {
         display: flex;
@@ -363,5 +402,6 @@ button {
     }
     code, code * {
         font-family: 'Courier New', Courier, monospace, '微软雅黑';
+        white-space: pre-wrap;
     }
 }

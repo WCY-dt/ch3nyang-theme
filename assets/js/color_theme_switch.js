@@ -2,36 +2,63 @@ function change_color_theme() {
     const body = document.body;
     const currentTheme = body.getAttribute('color_theme');
 
+    let newTheme = 'light';
     if (currentTheme === 'dark') {
-        body.setAttribute('color_theme', 'light');
+        newTheme = 'light';
     } else {
-        body.setAttribute('color_theme', 'dark');
+        newTheme = 'dark';
     }
 
-    // 添加调用更新主题样式的函数（例如 updateThemeStyles()）
-    // 这个函数需要根据当前的主题切换相应的样式
+    body.setAttribute('color_theme', newTheme);
+    // Save the new theme to localStorage
+    localStorage.setItem('color_theme', newTheme);
+
     updateThemeStyles();
 }
 
-// 添加一个更新主题样式的函数
 function updateThemeStyles() {
     const body = document.body;
-    const currentTheme = body.getAttribute('color_theme');
+    let currentTheme = body.getAttribute('color_theme');
     const themeToggle = document.getElementById('theme-toggle');
 
-    // 根据当前主题切换样式
-    if (currentTheme === 'dark') {
-        // 切换为浅色主题样式
-        themeToggle.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
-        // 添加切换样式的其他逻辑...
-    } else {
-        // 切换为深色主题样式
-        themeToggle.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
-        // 添加切换样式的其他逻辑...
+    // If there's a theme saved in localStorage, use it
+    if (localStorage.getItem('color_theme')) {
+        currentTheme = localStorage.getItem('color_theme');
+        body.setAttribute('color_theme', currentTheme);
     }
+
+    if (currentTheme === 'dark') {
+        themeToggle.innerHTML = '<span class="material-symbols-outlined">light_mode</span>';
+    } else {
+        themeToggle.innerHTML = '<span class="material-symbols-outlined">dark_mode</span>';
+    }
+
+    // Get the <head> element
+    const head = document.head;
+
+    // Remove the existing theme stylesheet if it exists
+    const existingThemeStylesheet = document.getElementById('theme-stylesheet');
+    if (existingThemeStylesheet) {
+        head.removeChild(existingThemeStylesheet);
+    }
+
+    // Create a new <link> element for the theme stylesheet
+    const themeStylesheet = document.createElement('link');
+    themeStylesheet.id = 'theme-stylesheet';
+    themeStylesheet.rel = 'stylesheet';
+    themeStylesheet.type = 'text/css';
+
+    // Set the href attribute based on the current theme
+    if (currentTheme === 'dark') {
+        themeStylesheet.href = '/assets/css/syntax_dark.css';
+    } else {
+        themeStylesheet.href = '/assets/css/syntax_light.css';
+    }
+
+    // Add the new theme stylesheet to the <head>
+    head.appendChild(themeStylesheet);
 }
 
-// 页面加载时初始化主题样式
 document.addEventListener('DOMContentLoaded', function () {
     updateThemeStyles();
 });
