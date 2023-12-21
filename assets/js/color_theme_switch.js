@@ -25,6 +25,10 @@ function updateThemeStyles() {
     if (localStorage.getItem('color_theme')) {
         currentTheme = localStorage.getItem('color_theme');
         body.setAttribute('color_theme', currentTheme);
+    } else {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            currentTheme = 'dark';
+        }
     }
 
     if (currentTheme === 'dark') {

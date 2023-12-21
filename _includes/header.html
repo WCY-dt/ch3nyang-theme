@@ -1,7 +1,11 @@
 <h1 class="title">{{ site.title }}</h1>
 <nav class="nav">
     {% for item in site.navy %}
-        <a href="{{ item.url }}" class="item">{{ item.title }}</a>
+        <a href="{{ item.url }}" class="item">
+            <span class="material-symbols-outlined">
+                {{ item.icon }}
+            </span><p>{{ item.title }}</p>
+        </a>
     {% endfor %}
 </nav>
 <button class="theme" id="theme-toggle" onclick="change_color_theme()">

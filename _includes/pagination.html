@@ -13,7 +13,7 @@
 {%- if posts.size > 0 -%}
     {%-if type=="home"-%}
         {%- for post in posts limit: site.post_list.limit -%}
-            <div class="post-list-item">
+            <div class="post-list-item no-select">
                 <div class="time">
                     <span class="material-symbols-outlined">
                         calendar_month
@@ -27,11 +27,15 @@
             </div>
         {%- endfor -%}
         {%- if site.post_list.show_more and limit_exceeded -%}
-            <a href="{{ site.post_list.show_more_url }}" class="more">{{ site.post_list.show_more_text | default: "Show more..." }}</a>
+            <a href="{{ site.post_list.show_more_url }}" class="more no-select">
+                <span class="material-symbols-outlined">
+                    read_more
+                </span>{{ site.post_list.show_more_text | default: "Show more..." }}
+            </a>
         {%- endif -%}
     {%-else-%}
         {%- for post in posts -%}
-            <div class="post-list-item">
+            <div class="post-list-item no-select">
                 <span class="time">
                     <span class="material-symbols-outlined">
                         calendar_month
