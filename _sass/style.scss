@@ -92,6 +92,8 @@ body {
 button {
     color:$color-words-and-lines-light;
     background-color: $color-background-light;
+
+    cursor: pointer;
 }
 
 .no-select {
@@ -99,6 +101,11 @@ button {
     -moz-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
+    -moz-user-drag: none; 
+    
+    img {
+        pointer-events: none;
+    }
 }
 
 .material-symbols-outlined {
