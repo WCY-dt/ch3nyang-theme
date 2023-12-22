@@ -12,7 +12,7 @@ baseurl: "/ch3nyang-theme"
 # e.g. http://example.com
 url: "" 
 # your google analytics tracking id
-google_analytics: G-XXXXXXXXXX 
+google_analytics: G-XXXXXXXXXX
 
 ############# 主题设置 #############
 theme_config:
@@ -21,7 +21,7 @@ theme_config:
 # icons are from https://fonts.google.com/icons
 navy:
   - title: home
-    url: 
+    url: /
     icon: home
   - title: about
     url: /about
@@ -37,7 +37,7 @@ navy:
     icon: rss_feed
 post_list:
   # how many posts to show in home page
-  limit: 5
+  limit: 10
   show_more: true
   show_more_text: MORE IN ARCHIVE...
   show_more_url: /archive
