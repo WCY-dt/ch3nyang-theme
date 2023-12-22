@@ -11,7 +11,7 @@ source 'https://gems.ruby-china.com/'
 gem "jekyll", "~> 4.3.2"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # 指定本地的主题 ch3nyang-theme
-gem "ch3nyang-theme", path: "./ch3nyang-theme"
+gem "ch3nyang-theme", path: "./_themes/ch3nyang-theme"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
