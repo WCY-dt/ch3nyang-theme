@@ -14,6 +14,8 @@ This theme has the following features:
 - Open a large number of personalized interfaces
 - Easy to deeply customize
 
+Demo at [https://blog.ch3nyang.top/ch3nyang-theme/](https://blog.ch3nyang.top/ch3nyang-theme/)
+
 ## Installation
 
 Click `Use this template` in the upper right corner of GitHub and clone the new repository locally.
@@ -27,8 +29,8 @@ $ bundle
 
 Basic configuration is in `_config.yml`.
 
-To configure the about page, edit `ch3nyang-theme/_data/about.yml`.
-To configure the project page, edit `ch3nyang-theme/_data/project.yml`.
+To configure the about page, edit `/_data/about.yml`.
+To configure the project page, edit `/_data/project.yml`.
 
 
 ## Contributing

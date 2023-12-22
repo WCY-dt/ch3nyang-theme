@@ -57,9 +57,9 @@ function updateThemeStyles() {
 
     // Set the href attribute based on the current theme
     if (currentTheme === 'dark') {
-        themeStylesheet.href = baseurl + '/assets/css/dark.css';        
+        themeStylesheet.href = baseurl + '/assets/css/syntax_dark.css';        
     } else {
-        themeStylesheet.href = baseurl + '/assets/css/light.css';
+        themeStylesheet.href = baseurl + '/assets/css/syntax_light.css';
     }
 
     // Add the new theme stylesheet to the <head>
