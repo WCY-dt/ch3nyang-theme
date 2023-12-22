@@ -1,4 +1,9 @@
-# ch3nyang-theme
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2023-01-01 00:00:01 +0800
+categories: welcome
+---
 
 A jekyll theme with a simple interface but rich functions.
 
