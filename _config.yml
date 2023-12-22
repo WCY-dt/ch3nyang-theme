@@ -45,7 +45,6 @@ post_list:
 ############# 其它设置 #############
 # Please do not modify the following settings
 # unless you know what you are doing.
-theme: ch3nyang-theme
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge
