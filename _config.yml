@@ -11,6 +11,7 @@ baseurl: "/ch3nyang-theme"
 # the base hostname & protocol for your site,
 # e.g. http://example.com
 url: "" 
+favicon: "favicon.ico"
 # your google analytics tracking id
 google_analytics: G-XXXXXXXXXX
 
