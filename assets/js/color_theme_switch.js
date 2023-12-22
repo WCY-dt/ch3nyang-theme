@@ -52,11 +52,14 @@ function updateThemeStyles() {
     themeStylesheet.rel = 'stylesheet';
     themeStylesheet.type = 'text/css';
 
+    // 获取 site.baseurl
+    const baseurl = document.querySelector('meta[name="baseurl"]').getAttribute('content');
+
     // Set the href attribute based on the current theme
     if (currentTheme === 'dark') {
-        themeStylesheet.href = '/assets/css/syntax_dark.css';
+        themeStylesheet.href = baseurl + '/assets/css/dark.css';        
     } else {
-        themeStylesheet.href = '/assets/css/syntax_light.css';
+        themeStylesheet.href = baseurl + '/assets/css/light.css';
     }
 
     // Add the new theme stylesheet to the <head>

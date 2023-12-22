@@ -7,7 +7,7 @@ author:
 # in footer
 powered_by: true
 # the subpath of your site, e.g. /blog
-baseurl: ""
+baseurl: "/ch3nyang-theme"
 # the base hostname & protocol for your site,
 # e.g. http://example.com
 url: "" 
@@ -21,7 +21,7 @@ theme_config:
 # icons are from https://fonts.google.com/icons
 navy:
   - title: home
-    url: /
+    url: 
     icon: home
   - title: about
     url: /about
@@ -33,7 +33,7 @@ navy:
     url: /project
     icon: hive
   - title: rss
-    url: /feed.xml
+    url: feed.xml
     icon: rss_feed
 post_list:
   # how many posts to show in home page

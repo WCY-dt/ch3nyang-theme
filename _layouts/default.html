@@ -32,7 +32,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
 
     <!-- 主样式表 -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
 </head>
 
 <body color_theme="{{ site.theme_config.color_theme | default: 'light' }}">
@@ -52,10 +52,10 @@
 
 <footer>
     <!-- 颜色模式切换 -->
-    <script src="{{ '/assets/js/color_theme_switch.js' | relative_url }}"></script>
+    <script src="{{ site.baseurl }}/assets/js/color_theme_switch.js"></script>
 
     <!-- 代码复制 -->
-    <script src="{{ '/assets/js/copy_code.js' | relative_url }}"></script>
+    <script src="{{ site.baseurl }}/assets/js/copy_code.js"></script>
 
     <!-- 数学公式 -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
