@@ -14,7 +14,7 @@ This theme has the following features:
 - Open a large number of personalized interfaces
 - Easy to deeply customize
 
-Demo at [https://blog.ch3nyang.top/ch3nyang-theme/](https://blog.ch3nyang.top/ch3nyang-theme/)
+Demo at [https://ch3nyang.top/ch3nyang-theme/](https://ch3nyang.top/ch3nyang-theme/)
 
 ## Installation
 
