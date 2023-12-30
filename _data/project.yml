@@ -4,20 +4,20 @@ projects:
     demo: https://ch3nyang.top/ch3nyang-theme
     description: >-
       A jekyll theme with a simple interface but rich functions. Used for my own blog.
-    tech: [HTML, SCSS, JavaScript, Liquid]
+    tech: [Liquid, SCSS, JS]
   - name: vim
     repo: https://github.com/vim/vim
     description: >-
       Vim is a greatly improved version of the good old UNIX editor Vi. Many new features have been added: multi-level undo, syntax highlighting, command line history, on-line help, spell checking, filename completion, block operations, script language, etc.
-    tech: [Vim Script, C, Roff, Makefile]
+    tech: [Vim, C, Makefile]
   - name: vscode
     repo: https://github.com/microsoft/vscode
     description: >-
       Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages and runtimes (such as C++, C#, Java, Python, PHP, Go, .NET). 
-    tech: [TypeScript, JavaScript, CSS, Rust]
+    tech: [TypeScript, JS, CSS, Rust]
   - name: Gradle
     repo: https://github.com/gradle/gradle
     demo: https://gradle.org/
     description: >-
       Gradle is a build tool with a focus on build automation and support for multi-language development. If you are building, testing, publishing, and deploying software on any platform, Gradle offers a flexible model that can support the entire development lifecycle from compiling and packaging code to publishing web sites.
-    tech: [Groovy, Java, Kotlin, C++]
+    tech: [Groovy, Java, Kotlin, Cpp]
