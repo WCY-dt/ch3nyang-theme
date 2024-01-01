@@ -23,8 +23,9 @@ Click `Use this template` in the upper right corner of GitHub and clone the new 
 In the folder, execute:
 
 ```shell
-$ bundle
+bundle
 ```
+
 ## Usage
 
 Basic configuration is in `_config.yml`.
@@ -32,10 +33,9 @@ Basic configuration is in `_config.yml`.
 To configure the about page, edit `/_data/about.yml`.
 To configure the project page, edit `/_data/project.yml`.
 
-
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/wcy-dt/ch3nyang-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [https://github.com/wcy-dt/ch3nyang-theme](https://github.com/wcy-dt/ch3nyang-theme). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
 
