@@ -9,6 +9,18 @@ $color-block-dark: rgba(255, 255, 255, 0.1);
 @mixin dark-appearance {
     color: $color-words-and-lines-dark;
     background-color: $color-background-dark;
+
+    .about_content .content {
+        .github, .contact, .skill, .learn {
+            .name {
+                color: $color-words-and-lines-dark;
+            }
+            .detail .item {
+                border-color: $color-words-and-lines-dark;
+                color: $color-words-and-lines-dark;
+            }
+        }
+    }
 }
 
 body[color_theme="dark"] {
@@ -49,8 +61,7 @@ body[color_theme="dark"] {
     .image {
         grid-column: 1;
         grid-row: 1 / 5;
-
-        // 限制图片大小
+        
         max-width: 100%;
     }
     .description {
@@ -101,8 +112,28 @@ body[color_theme="dark"] {
 
             align-self: center;
 
-            a {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+    .contact, .skill, .learn {
+        .detail {
+            .item {
+                padding: 2px 5px;
+                border: 1px solid $color-words-and-lines-light;
+    
                 text-decoration: none;
+                color: $color-words-and-lines-light;
+    
+                display: inline-block;
+    
+                font-size: 0.8em;
+    
+                img {
+                    max-width: 1em;
+                }
             }
         }
     }

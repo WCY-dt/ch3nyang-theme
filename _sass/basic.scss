@@ -77,9 +77,13 @@ button {
     }
 }
 
-.material-symbols-outlined,
-.iconify {
+.material-symbols-outlined{
     vertical-align: -0.2em;
+    padding-right: 2px;
+}
+
+.iconify {
+    vertical-align: -0.1em;
     padding-right: 2px;
 }
 
